@@ -15,6 +15,6 @@ interface ExampleService {
 
     @FormUrlEncoded
     @POST("/lg/user_article/add/json")
-    suspend fun shareArticle(@Field("title") title: String, @Field("link") url: String): WanResponse<String>
+    suspend fun shareArticle(@Field("title") title: String, @Field("link") url: String): WanResponse<User>
 
 }

@@ -16,7 +16,7 @@ open class BaseViewModel : ViewModel() {
 
     )
 
-    val mException: MutableLiveData<Throwable> = MutableLiveData()
+    private val mException: MutableLiveData<Throwable> = MutableLiveData()
 
     private fun launchOnUI(block: suspend CoroutineScope.() -> Unit) {
 
